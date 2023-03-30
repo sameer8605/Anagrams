@@ -1,0 +1,20 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+let Anagrams = (s,t)=>{
+ s = s.toUpperCase().split('').sort().join('');
+ t= t.toUpperCase().split('').sort().join('');
+return s === t;
+}
+
+console.log(
+Anagrams("abC","Cab"),
+Anagrams('aac','aab')
+)
+</script>
+</body>
+</html>
